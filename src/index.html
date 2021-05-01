@@ -9,7 +9,27 @@
     <link rel="shortcut icon" type="image/png" href="../images/thermometer.png">
 </head>
 <body>
-    
+    <h1>Temperature Converter</h1>
+    <form>
+        <label for="temp">Temperature:</label>
+        <input id="temp" type="text" placeholder="ie, 38.5" required>
+        <br>
+        <label for="from">Converting From:</label>
+        <select id="from" name="from-types" required>
+            <option value="" selected hidden>Please select</option>
+            <option value="celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+        </select>
+        <br>
+        <label for="to">Converting To:</label>
+        <select id="to" name="to-types" required>
+            <option value="" selected disabled hidden>Please select</option>
+            <option value="celsius">Celsius</option>
+            <option value="Fahrenheit">Fahrenheit</option>
+        </select>
+        <br>
+        <input type="submit" value="Convert!">
+    </form>
     <script src="./script.js"></script>
 </body>
 </html>
