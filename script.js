@@ -9,8 +9,6 @@ button.addEventListener('click', function(event) {
     event.preventDefault();
     let inputTemp = formElements["inputTemp"].value;
     let fromType = formElements["fromType"].value;
-    console.log(inputTemp)
-    console.log(fromType)
     if (typeof inputTemp !== "number" || fromType === "") {
         newP.textContent = "Please put a number in the temperature box, and select a type from the drop down menu."
     }
